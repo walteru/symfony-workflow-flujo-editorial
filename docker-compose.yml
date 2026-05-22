@@ -1,0 +1,14 @@
+services:
+  app:
+    container_name: workflow-editorial-app
+    build:
+      context: docker/php-apache
+    volumes:
+      - ./src/:/var/www/html
+    ports:
+      - '8092:80'
+    networks:
+      - workflow-net
+
+networks:
+  workflow-net:
