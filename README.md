@@ -2,6 +2,8 @@
 
 Demo **autocontenida** (clone & run con Docker) del [componente Workflow](https://symfony.com/doc/current/workflow.html) de Symfony, aplicado a un caso real: el **flujo de publicación de un artículo** de un blog.
 
+> 📝 **Post del blog:** [El componente Workflow de Symfony: máquinas de estado sin ensuciar el código](https://sincrodev.com/blog/symfony-workflow-maquina-estados-flujo-editorial/)
+
 Un artículo recorre estos estados:
 
 ```
@@ -59,6 +61,14 @@ make down       # baja todo
 
 - Symfony 6.4 (PHP 8.3) · Doctrine ORM con **SQLite** (sin servicio de base aparte)
 - Twig para las vistas · Apache en el contenedor
+
+## La serie Fast Track
+
+Este es el **#1** de una serie que desentraña secciones de *[Symfony: The Fast Track](https://symfony.com/doc/6.4/the-fast-track/en/index.html)* con casos de uso reales. Los tres componen sobre el mismo evento `entered.publicado` del Workflow:
+
+- **#1 Workflow** — estados, guards y eventos · [repo](https://github.com/walteru/symfony-workflow-flujo-editorial) · [post](https://sincrodev.com/blog/symfony-workflow-maquina-estados-flujo-editorial/)
+- **#2 Messenger** — trabajo lento fuera del request · [repo](https://github.com/walteru/symfony-messenger-tareas-async) · [post](https://sincrodev.com/blog/symfony-messenger-tareas-async-fuera-del-request/)
+- **#3 HttpCache + ESI** — páginas públicas rápidas · [repo](https://github.com/walteru/symfony-cache-paginas-publicas) · [post](https://sincrodev.com/blog/symfony-cache-paginas-publicas-rapidas-sin-servir-viejo/)
 
 ## Licencia
 
